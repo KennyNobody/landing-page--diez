@@ -1,0 +1,41 @@
+.item-service {
+	background-color: $grey;
+	padding: rem(58) rem(40) 0 rem(40);
+	border-radius: rem(30);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	color: inherit;
+	text-decoration: none;
+	transition: 0.3s all;
+	height: 100%;
+	&:hover {
+		background-color: $red;
+		color: $light;
+	}
+	&__title {
+		margin-bottom: rem(20);
+		font-weight: 700;
+		font-size: rem(24);
+	}
+	&__content {
+		flex-grow: 1;
+		font-size: rem(16);
+		margin-bottom: rem(50);
+		font-weight: 300;
+	}
+	&__price {
+		margin-bottom: rem(52);
+		font-family: $font-title;
+		font-weight: 700;
+		font-size: rem(36);
+	}
+	&__footer {
+		padding-top: rem(26);
+		padding-bottom: rem(26);
+		display: flex;
+		align-items: center;
+		border-top: rem(1) solid #7E8CA0;
+		justify-content: space-between;
+	}
+}

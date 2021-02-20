@@ -71,19 +71,7 @@
         "yargs": "^15.4.1"
     },
     "dependencies": {
+        "masonry-layout": "^4.2.2",
         "smart-grid": "^2.1.2"
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "lint-staged"
-        }
-    },
-    "lint-staged": {
-        "!(_*).scss": [
-            "stylelint --fix --color --config ./.stylelintrc"
-        ],
-        "*.js": [
-            "eslint --fix --color"
-        ]
     }
 }

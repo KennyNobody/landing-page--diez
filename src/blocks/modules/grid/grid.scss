@@ -1,0 +1,44 @@
+.grid {
+	&__content {
+		margin-bottom: rem(40);
+	}
+	&__item {
+		display: flex;
+		border-radius: rem(30);
+		flex-direction: column;
+		height: rem(454);
+		background-color: $grey;
+		padding: rem(50);
+		text-decoration: none;
+		color: $dark;
+		transition: 0.3s all;
+		&:hover {
+			opacity: 0.7;
+		}
+		&-discript {
+			font-size: rem(14);
+			font-weight: 300;
+			margin-bottom: rem(5);
+		}
+		&-title {
+			font-weight: 700;
+			text-transform: uppercase;
+		}
+		&--top {
+			justify-content: start;
+		}
+		&--bottom {
+			justify-content: flex-end;
+		}
+		&--light {
+			color: $light;
+		}
+		&--large {
+			height: rem(928);
+		}
+	}
+	&__toolbar {
+		display: flex;
+		justify-content: center;
+	}
+}
