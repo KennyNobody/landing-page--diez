@@ -1,0 +1,129 @@
+.editor {
+	&--bottom-50 {
+		margin-bottom: 50px;
+	}
+	&--bottom-60 {
+		margin-bottom: 60px;
+	}
+	// & :last-child {
+	// 	margin-bottom: 0px;
+	// }
+	h1, h2, h3, h4, h5 {
+		font-weight: 700;
+		margin-bottom: 1.5rem;
+		span {
+			font-size: inherit !important;
+		}
+	}
+	h1 {
+		font-size: 48px;
+		@include r(1200) {
+			font-size: 24px;
+		}
+	}
+	h2 {
+		font-size: 36px;
+		@include r(1200) {
+			font-size: 22px;
+		}
+	}
+	h3 {
+		font-size: 24px;
+		@include r(1200) {
+			font-size: 20px;
+		}
+	}
+	h4 {
+		font-size: 20px;
+		@include r(1200) {
+			font-size: 18px;
+		}
+	}
+	h5 {
+		font-size: 18px;
+		@include r(1200) {
+			font-size: 16px;
+		}
+	}
+	strong, b {
+		font-weight: 700;
+	}
+	p {
+		margin-bottom: 1.5rem;
+	}
+	ol {
+		list-style: decimal;
+		list-style-position: inside;
+		margin-bottom: 1rem;
+	}
+	ul {
+		list-style: disc;
+		list-style-position: inside;
+		margin-bottom: 1rem;
+	}
+	em {
+		font-style: italic;
+	}
+	blockquote {
+		display: block;
+		margin-bottom: 1.5rem;
+		position: relative;
+		padding-left: 32px;
+		border-left: 2px solid $red;
+		font-style: italic;
+		font-size: 18px;
+		@include r(1200) {
+			font-size: 16px;
+			padding-left: 10px;
+		}
+	}
+	figure {
+		display: block;
+		padding-bottom: 15px;
+		margin-bottom: 1.5rem;
+		@include r(1200) {
+			padding-bottom: 10px;
+		}
+	}
+	figcaption {
+		color: #848DB0;
+		@include r(1200) {
+			font-size: 14px;
+		}
+	}
+	picture {
+		display: block;
+		margin-bottom: 30px;
+	}
+	img {
+		display: block;
+		width: 100%;
+		height: auto;
+		margin-bottom: 15px;
+		@include r(1200) {
+			margin-bottom: 10px;
+		}
+	}
+	a {
+		color: $dark;
+		position: relative;
+		text-decoration: none;
+		display: inline-block;
+		&:after {
+			content: "";
+			display: block;
+			height: 2px;
+			background-color: $red;
+			top: calc(100% - 3px);
+			position: absolute;
+			left: 0px;
+			width: 100%;
+			transition: 0.15s all;
+		}
+		&:hover {
+			&:after {
+				opacity: 0;
+			}
+		}
+	}
+}

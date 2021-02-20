@@ -1,0 +1,41 @@
+.section {
+	&--top {
+		padding-top: rem(20);
+		padding-bottom: rem(20);
+	}
+	&--intro {
+
+	}
+	&--bottom {
+		padding-top: rem(42);
+		padding-bottom: rem(42);
+	}
+	// Colors
+	&--light {
+		background-color: $light;
+	}
+	&--grey {
+		background-color: $grey;
+	}
+	&--dark-light {
+		background-color: $dark-bottom;
+		color: $light;
+	}
+	&--dark {
+		background-color: $dark;
+		color: $light;
+	}
+	// Types
+	&--intro {
+		padding-top: rem(198);
+		padding-bottom: rem(54);
+	}
+	&--normal {
+		padding-top: rem(120);
+		padding-bottom: rem(120);
+	}
+	&--large {
+		padding-top: rem(240);
+		padding-bottom: rem(240);
+	}
+}

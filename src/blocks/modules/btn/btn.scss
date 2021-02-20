@@ -1,0 +1,21 @@
+.btn {
+	height: rem(60);
+	color: $light;
+	background-color: $red;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	border-radius: rem(50);
+	padding-left: rem(47);
+	padding-right: rem(47);
+	text-align: center;
+	transition: 0.3s all;
+	cursor: pointer;
+	&:hover {
+		opacity: 0.7;
+	}
+	&__text {
+		font-weight: 700;
+	}
+}

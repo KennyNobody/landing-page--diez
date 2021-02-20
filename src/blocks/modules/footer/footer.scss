@@ -1,0 +1,19 @@
+.footer {
+	&__section {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		&--top {
+			padding-top: rem(45);
+			padding-bottom: rem(45);
+			border-bottom: rem(1) solid $light; 
+		}
+		&--bottom {
+			padding-top: rem(26);
+			padding-bottom: rem(26);
+		}
+	}	
+	&__discript {
+		font-size: rem(14);
+	}
+}

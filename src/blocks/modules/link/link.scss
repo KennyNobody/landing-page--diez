@@ -1,0 +1,15 @@
+.link {
+	color: inherit;
+	text-decoration: none;
+	font-size: rem(14);
+	transition: 0.3s all;
+	&:hover {
+		opacity: 0.7;
+	}
+	&__icon {
+		margin-right: rem(15);
+	}
+	&__text {
+		
+	}
+}
