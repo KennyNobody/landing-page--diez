@@ -4,7 +4,8 @@
 		padding-bottom: rem(20);
 	}
 	&--intro {
-
+		background-position: left 0 top rem(16);
+		background-size: 100% auto;
 	}
 	&--bottom {
 		padding-top: rem(42);
@@ -37,5 +38,9 @@
 	&--large {
 		padding-top: rem(240);
 		padding-bottom: rem(240);
+	}
+	&--contacts {
+		background-position: right center;
+		background-repeat: no-repeat;
 	}
 }

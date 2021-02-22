@@ -12,8 +12,14 @@
 	text-align: center;
 	transition: 0.3s all;
 	cursor: pointer;
+	border: none;
+	font-family: inherit;
+	font-size: rem(16);
+	&--large {
+		min-width: rem(206);
+	}
 	&:hover {
-		opacity: 0.7;
+		background-color: #C80305;
 	}
 	&__text {
 		font-weight: 700;

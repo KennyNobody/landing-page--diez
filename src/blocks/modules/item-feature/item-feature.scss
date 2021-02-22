@@ -1,0 +1,19 @@
+.item-feature {
+	padding-left: rem(45);
+	&__icon {
+		width: 75px;
+		height: 71.2px;
+		box-shadow: rem(15) rem(15) rem(30) rgba(13, 30, 63, 0.1);
+		border-radius: rem(30);
+		display: block;
+		margin-bottom: rem(38);
+	}
+	&__title {
+		font-weight: 500;
+		margin-bottom: rem(15);
+		text-transform: uppercase;
+	}
+	&__discript {
+
+	}
+}

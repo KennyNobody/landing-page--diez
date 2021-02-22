@@ -12,6 +12,12 @@
 	&:hover {
 		background-color: $red;
 		color: $light;
+		.item-service__footer-icon {
+			fill: $light;
+		}
+		.item-service__footer {
+			border-color: $light;
+		}
 	}
 	&__title {
 		margin-bottom: rem(20);
@@ -37,5 +43,13 @@
 		align-items: center;
 		border-top: rem(1) solid #7E8CA0;
 		justify-content: space-between;
+		transition: inherit;
+		&-icon {
+			fill: $dark;
+			display: block;
+			width: rem(27);
+			height: rem(27);
+			transition: 0.3s all;
+		}
 	}
 }

@@ -1,0 +1,41 @@
+.agreement {
+	display: flex;
+	cursor: pointer;
+	&__input {
+		display: none;
+		visibility: hidden;
+		&:checked + .agreement__icon {
+			.agreement__icon-img {
+				opacity: 1;
+			}
+		}
+	}
+	&__icon {
+		width: rem(20);
+		height: rem(20);
+		background-color: $grey;
+		margin-right: rem(15);
+		border-radius: rem(5);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-shrink: 0;
+		position: relative;
+		left: rem(3);
+		&-img {
+			display: block;
+			width: rem(13);
+			height: rem(9);
+			opacity: 0;
+			transition: 0.3s all;
+		}
+	}
+	&__text {
+		a {
+			color: inherit;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+}
