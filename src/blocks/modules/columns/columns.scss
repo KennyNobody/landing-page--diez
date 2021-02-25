@@ -8,6 +8,9 @@
 	&--start {
 		justify-content: flex-start;
 	}
+	&--align {
+		align-items: center;
+	}
 	&__column {
 		&--1 {
 			width: calc(100% / 12 - 10px);

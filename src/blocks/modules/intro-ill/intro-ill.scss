@@ -1,0 +1,47 @@
+.intro-ill {
+	position: relative;
+	width: fit-content;
+	&__img {
+		z-index: 2;
+		position: relative;
+		display: block;
+	}
+	&__content {
+		position: absolute;
+		z-index: 3;
+		top: 0;
+		color: $light;
+		display: block;
+		width: 50%;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		padding-left: rem(220);
+		padding-top: rem(120);
+		margin-bottom: rem(37);
+	}
+	&__title {
+		font-size: rem(48);
+		font-family: $font-title;
+		font-weight: 300;
+		margin-bottom: rem(26);
+		position: relative;
+		strong {
+			padding-left: rem(8);
+			font-weight: 700;
+		}
+	}
+	&__text {
+		font-size: rem(12);
+		p {
+			margin-bottom: rem(26);
+		}
+	}
+	&__icon {
+		width: rem(23);
+		height: rem(34);
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}

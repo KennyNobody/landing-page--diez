@@ -3,17 +3,31 @@
 		margin-bottom: rem(40);
 	}
 	&__item {
-		display: flex;
-		border-radius: rem(30);
-		flex-direction: column;
 		height: rem(454);
 		background-color: $grey;
-		padding: rem(50);
 		text-decoration: none;
 		color: $dark;
 		transition: 0.3s all;
+		position: relative;
+		display: block;
 		&:hover {
 			opacity: 0.7;
+		}
+		&-preview {
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
+		&-content {
+			display: flex;
+			border-radius: rem(30);
+			flex-direction: column;
+			position: absolute;
+			padding: rem(50);
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
 		}
 		&-discript {
 			font-size: rem(14);
@@ -25,10 +39,14 @@
 			text-transform: uppercase;
 		}
 		&--top {
-			justify-content: start;
+			.grid__item-content {
+				justify-content: start;
+			}
 		}
 		&--bottom {
-			justify-content: flex-end;
+			.grid__item-content {
+				justify-content: flex-end;
+			}
 		}
 		&--light {
 			color: $light;

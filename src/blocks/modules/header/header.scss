@@ -3,9 +3,11 @@
 	justify-content: space-between;
 	align-items: center;
 	&__content {
-		display: block;
+		display: flex;
 		max-width: rem(1170);
 		width: 100%;
+		align-items: center;
+		justify-content: space-between;
 	}
 	&__side {
 		display: block;

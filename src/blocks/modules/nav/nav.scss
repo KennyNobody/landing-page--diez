@@ -1,9 +1,19 @@
 .nav {
+	&--header {
+		flex-grow: 1;
+		min-width: 0;
+	}
+	&--footer {
+
+	}
 	&__link {
 		color: inherit;
 		text-decoration: none;
 		transition: 0.3s all;
 		margin-right: rem(39);
+		@include r(1600) {
+			// margin-right: rem(20);
+		}
 		&:last-of-type {
 			margin-right: 0;
 		}

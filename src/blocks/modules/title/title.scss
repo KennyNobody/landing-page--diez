@@ -1,17 +1,30 @@
 .title {
 	display: block;
 	text-align: center;
+	&--left {
+		text-align: left;
+	}
 	&__text {
 		font-family: $font-title;
-		font-size: rem(72);
+		font-size: rem(68);
 		text-transform: uppercase;
 		font-weight: 700;
 		margin-bottom: rem(19);
+		font-family: $font-title;
+		&--main {
+			color: $red;
+		}
 	}
 	&__discript {
 		color: $red;
 		text-transform: uppercase;
 		font-weight: 500;
 		font-size: rem(24);
+		&--main {
+			font-size: rem(36);
+			font-family: $font-title;
+			color: $dark;
+			font-family: $font-title;
+		}
 	}
 }

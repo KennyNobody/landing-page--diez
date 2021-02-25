@@ -2,6 +2,9 @@
 	&-20 {
 		margin-bottom: rem(20);
 	}
+	&-30 {
+		margin-bottom: rem(30);
+	}
 	&-32 {
 		margin-bottom: rem(32);
 	}
@@ -13,5 +16,25 @@
 	}
 	&-70 {
 		margin-bottom: rem(70);
+	}
+	&-80 {
+		margin-bottom: rem(80);
+	}
+	&-90 {
+		margin-bottom: rem(90);
+	}
+}
+
+.disabled {
+	opacity: 0.5;
+	pointer-events: none;
+}
+
+.mob-hidden {
+	display: none;
+	visibility: hidden;
+	@include r(1200) {
+		display: block;
+		visibility: visible;
 	}
 }

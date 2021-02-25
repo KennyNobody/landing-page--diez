@@ -1,0 +1,11 @@
+.item-fact {
+	display: flex;
+	align-items: center;
+	&__icon {
+		display: block;
+		flex-shrink: 0;
+		margin-right: rem(24);
+		width: rem(75);
+		height: rem(71);
+	}
+}

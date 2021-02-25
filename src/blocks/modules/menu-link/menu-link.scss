@@ -1,0 +1,10 @@
+.menu-link {
+	padding: rem(8);
+	@include r(1200) {
+		display: flex;
+	}
+	&__icon {
+		width: rem(22);
+		height: rem(22);
+	}
+}
