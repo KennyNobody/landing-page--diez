@@ -2,7 +2,7 @@
 	<div class="header__side header__side--left">
 		@@include("../logo/logo.html")
 	</div>
-	<div class="header__content">
+	<div class="header__content mob-hidden">
 		@@include("../nav/nav.html")
 		<a href="mailto:hi@diez.io" class="link link--header">
 			<svg class="link__icon">
@@ -21,12 +21,12 @@
 			</span>
 		</a>
 	</div>
-	<div class="header__side header__side--right">
+	<div class="header__side header__side--right mob-hidden">
 		<a href="#modal-call" class="btn">
 			<span class="btn__text">Обратная связь</span>
 		</a>
 	</div>
-	<a href="" class="menu-link mob-hidden">
+	<a href="" class="menu-link mob-visible">
 		<svg class="menu-link__icon">
 			<use xlink:href="img/sprites/sprite.svg#icon-menu"></use>
 		</svg>

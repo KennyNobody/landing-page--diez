@@ -30,11 +30,18 @@
 	pointer-events: none;
 }
 
-.mob-hidden {
+.mob-visible {
 	display: none;
 	visibility: hidden;
 	@include r(1200) {
 		display: block;
 		visibility: visible;
+	}
+}
+
+.mob-hidden {
+	@include r(1200) {
+		display: none;
+		visibility: hidden;
 	}
 }

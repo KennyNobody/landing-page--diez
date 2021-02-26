@@ -1,0 +1,64 @@
+.body--menu-opened {
+    .menu {
+        visibility: visible;
+        opacity: 1;
+        &__overlay {
+            opacity: 0.5;
+        }
+        &__content {
+            left: 0;
+        }
+    }
+}
+
+.menu {
+    visibility: hidden;
+    overflow: hidden;
+    height: 100vh;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    &__overlay {
+        background-color: $dark;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: block;
+        opacity: 0;
+        transition: 0.3s all;
+    }
+    &__content {
+        height: 100%;
+        width: 75%;
+        min-width: 260px;
+        background-color: $light;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: 0.3s all;
+        overflow: hidden;
+        left: -100%;
+    }
+    &__main {
+        text-align: center;
+    }
+    &__link {
+        display: block;
+        color: inherit;
+        text-decoration: none;
+        font-size: rem(18);
+        padding: rem(5);
+        &:hover {
+            opacity: 0.5;
+        }
+    }
+}
