@@ -2,6 +2,9 @@
 	&--header {
 		flex-grow: 1;
 		min-width: 0;
+		@include r(1600) {
+			display: none;
+		}
 	}
 	&--footer {
 

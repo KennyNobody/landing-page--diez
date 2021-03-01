@@ -2,6 +2,9 @@
 	display: block;
 	&--4 {
 		width: calc(100% / 12 * 4 - 10px);
+		@include r(1200) {
+			width: 100%;
+		}
 	}
 	&--12 {
 		width: 100%;
@@ -16,6 +19,9 @@
 		padding: rem(24) rem(40);
 		font-size: rem(14);
 		font-weight: 300;
+		@include r(1200) {
+			padding: rem(18) rem(20);
+		}
 		&--textarea {
 			resize: none;
 			min-height: rem(126);

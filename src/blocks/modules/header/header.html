@@ -2,33 +2,38 @@
 	<div class="header__side header__side--left">
 		@@include("../logo/logo.html")
 	</div>
-	<div class="header__content mob-hidden">
+	<div class="header__content">
 		@@include("../nav/nav.html")
-		<a href="mailto:hi@diez.io" class="link link--header">
-			<svg class="link__icon">
-				<use xlink:href="img/sprites/sprite.svg#icon-mail"></use>
-			</svg>
-			<span class="link__text">
-				hi@diez.io
-			</span>
-		</a>
-		<a href="+74012751750" class="link link--header">
-			<svg class="link__icon">
-				<use xlink:href="img/sprites/sprite.svg#icon-phone"></use>
-			</svg>
-			<span class="link__text">
-				+7 (4012) 751-750
-			</span>
-		</a>
+		<div class="header__burger">
+			<a href="" class="menu-link">
+				<svg class="menu-link__icon">
+					<use xlink:href="img/sprites/sprite.svg#icon-menu"></use>
+				</svg>
+			</a>
+		</div>
+		<div class="header__socials mob-hidden">
+			<a href="mailto:hi@diez.io" class="link link--header">
+				<svg class="link__icon">
+					<use xlink:href="img/sprites/sprite.svg#icon-mail"></use>
+				</svg>
+				<span class="link__text">
+					hi@diez.io
+				</span>
+			</a>
+			<a href="+74012751750" class="link link--header">
+				<svg class="link__icon">
+					<use xlink:href="img/sprites/sprite.svg#icon-phone"></use>
+				</svg>
+				<span class="link__text">
+					+7 (4012) 751-750
+				</span>
+			</a>
+		</div>
+		
 	</div>
 	<div class="header__side header__side--right mob-hidden">
-		<a href="#modal-call" class="btn">
+		<a href="#section-contacts" class="btn btn--full">
 			<span class="btn__text">Обратная связь</span>
 		</a>
 	</div>
-	<a href="" class="menu-link mob-visible">
-		<svg class="menu-link__icon">
-			<use xlink:href="img/sprites/sprite.svg#icon-menu"></use>
-		</svg>
-	</a>
 </div>

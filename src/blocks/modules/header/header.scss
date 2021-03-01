@@ -7,17 +7,37 @@
 		max-width: rem(1170);
 		width: 100%;
 		align-items: center;
-		justify-content: space-between;
+		// justify-content: space-between;
+		justify-content: flex-start;
+		@include r(1600) {
+			justify-content: space-between;
+		}
+		@include r(1200) {
+			justify-content: flex-end;
+		}
+	}
+	&__socials {
+		display: flex;
 	}
 	&__side {
 		display: block;
 		// flex-grow: 1;
 		width: rem(215);
 		&--left {
-
+			@include r(1600) {
+				width: calc(100% / 12 * 2 - 20px);
+			}
 		}
 		&--right {
-
+			@include r(1600) {
+				width: calc(100% / 12 * 4 - 20px);
+			}
+		}
+	}
+	&__burger {
+		display: none;
+		@include r(1600) {
+			display: block;
 		}
 	}
 }

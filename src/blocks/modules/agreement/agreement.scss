@@ -1,6 +1,7 @@
 .agreement {
 	display: flex;
 	cursor: pointer;
+	width: 100%;
 	&__input {
 		display: none;
 		visibility: hidden;
@@ -31,6 +32,9 @@
 		}
 	}
 	&__text {
+		@include r(1200) {
+			font-size: rem(14);
+		}
 		a {
 			color: inherit;
 			&:hover {

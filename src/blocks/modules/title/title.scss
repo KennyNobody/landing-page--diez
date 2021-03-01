@@ -1,6 +1,7 @@
 .title {
 	display: block;
 	text-align: center;
+	line-height: 1.2;
 	&--left {
 		text-align: left;
 	}
@@ -11,6 +12,10 @@
 		font-weight: 700;
 		margin-bottom: rem(19);
 		font-family: $font-title;
+		@include r(1200) {
+			font-size: rem(62);
+			margin-bottom: rem(12);
+		}
 		&--main {
 			color: $red;
 		}
@@ -20,11 +25,17 @@
 		text-transform: uppercase;
 		font-weight: 500;
 		font-size: rem(24);
+		@include r(1200) {
+			font-size: rem(18);
+		}
 		&--main {
 			font-size: rem(36);
 			font-family: $font-title;
 			color: $dark;
 			font-family: $font-title;
+			@include r(1200) {
+				font-size: rem(26);
+			}
 		}
 	}
 }

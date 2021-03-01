@@ -3,6 +3,9 @@
 	justify-content: space-between;
 	flex-wrap: wrap;
 	position: relative;
+	@include r(1200) {
+		display: block;
+	}
 	&:before {
 		width: 2px;
 		height: 100%;
@@ -23,8 +26,19 @@
 	width: calc(50% - 50px);
 	align-self: flex-end;
 	position: relative;
+	@include r(1200) {
+		width: 100%;
+		padding: rem(25) rem(40);
+		border-radius: rem(10);
+	}
+	@include r(420) {
+		padding: rem(20) rem(30);
+	}
 	&:nth-child(2n + 1) {
 		margin-bottom: 50px;
+		@include r(1200) {
+			margin-bottom: rem(20);
+		}
 		&:before {
 			width: 49px;
 			height: 0;
@@ -35,9 +49,15 @@
 			content: "";
 			border-bottom: rem(2) dashed $grey;
 			transform: translateY(-50%);
+			@include r(1200) {
+				display: none;
+			}
 		}
 	}
 	&:nth-child(2n) {
+		@include r(1200) {
+			margin-bottom: rem(20);
+		}
 		&:before {
 			width: 49px;
 			height: 0;
@@ -48,12 +68,18 @@
 			content: "";
 			border-bottom: rem(2) dashed $grey;
 			transform: translateY(-50%);
+			@include r(1200) {
+				display: none;
+			}
 		}
 	}
 	&__header {
 		display: flex;
 		align-items: center;
 		margin-bottom: rem(32);
+		@include r(420) {
+			display: block;
+		}
 	}
 	&__icon {
 		width: rem(79);
@@ -62,12 +88,26 @@
 		margin-right: rem(45);
 		border-radius: rem(30);
 		box-shadow: rem(15) rem(15) rem(30) rgba(13, 30, 63, 0.1);
+		flex-shrink: 0;
+		overflow: hidden;
+		@include r(1200) {
+			width: rem(40);
+			height: rem(36);
+			border-radius: rem(10);
+			margin-right: rem(18);
+		}
+		@include r(420) {
+			margin-bottom: rem(20);
+		}
 	}
 	&__title {
 		font-weight: 500;
 		font-size: rem(18);
 		text-transform: uppercase;
 		line-height: 1.5;
+		@include r(1200) {
+			font-size: rem(16);
+		}
 	}
 	&__footer {
 		display: flex;

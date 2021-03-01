@@ -72,5 +72,10 @@
 		&--12 {
 			width: 100%;
 		}
+		&--mob-order-1 {
+			@include r(1200) {
+				order: -1;
+			}
+		}
 	}
 }

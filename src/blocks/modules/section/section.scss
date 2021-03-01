@@ -6,6 +6,11 @@
 	&--intro {
 		background-position: left 0 top rem(16);
 		background-size: 100% auto;
+		background-repeat: no-repeat;
+		@include r(1200) {
+			background-size: cover;
+			background-position: center;
+		}
 	}
 	&--features {
 		background-size: cover;
@@ -35,14 +40,25 @@
 	&--intro {
 		padding-top: rem(198);
 		padding-bottom: rem(54);
+		@include r(1200) {
+			padding-top: rem(120);
+		}
 	}
 	&--normal {
 		padding-top: rem(120);
 		padding-bottom: rem(120);
+		@include r(1200) {
+			padding-top: rem(80);
+			padding-bottom: rem(80);
+		}
 	}
 	&--large {
 		padding-top: rem(240);
 		padding-bottom: rem(240);
+		@include r(1200) {
+			padding-top: rem(80);
+			padding-bottom: rem(80);
+		}
 	}
 	&--contacts {
 		background-position: right center;
