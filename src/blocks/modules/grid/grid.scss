@@ -3,7 +3,7 @@
 		margin-bottom: rem(40);
 	}
 	&__item {
-		height: rem(310);
+		height: rem(456);
 		background-color: $grey;
 		text-decoration: none;
 		color: $dark;
@@ -12,8 +12,12 @@
 		display: block;
 		border-radius: rem(30);
 		overflow: hidden;
+		@include r(1600) {
+			height: rem(310);
+		}
 		@include r(1200) {
 			border-radius: rem(10);
+			height: auto;
 		}
 		&:hover {
 			opacity: 0.7;
@@ -36,6 +40,11 @@
 			@include r(1600) {
 				padding: rem(25);
 			}
+			@include r(1200) {
+				br {
+					display: none;
+				}
+			}
 		}
 		&-discript {
 			font-size: rem(14);
@@ -49,6 +58,9 @@
 		&--top {
 			.grid__item-content {
 				justify-content: start;
+				@include r(1200) {
+					justify-content: flex-end;
+				}
 			}
 		}
 		&--bottom {
@@ -60,9 +72,12 @@
 			color: $light;
 		}
 		&--large {
-			height: rem(640);
+			height: rem(932);
+			@include r(1600) {
+				height: rem(640);
+			}
 			@include r(1200) {
-				height: rem(454);
+				height: auto;
 			}
 		}
 	}
