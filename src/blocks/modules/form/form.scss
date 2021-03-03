@@ -2,4 +2,56 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	position: relative;
+	&--sending {
+		.form__message {
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+	&__message {
+		position: absolute;
+		z-index: 2;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background-color: $light;
+		opacity: 0;
+		visibility: hidden;
+		text-align: center;
+		&-icon {
+			width: rem(112);
+			height: rem(112);
+			margin-bottom: rem(62);
+			@include r(1200) {
+				width: rem(64);
+				height: rem(64);
+				margin-bottom: rem(24);
+			}
+		}
+		&-title {
+			font-family: $font-title;
+			font-size: rem(72);
+			font-weight: 700;
+			text-transform: uppercase;
+			line-height: 1.2;
+			margin-bottom: rem(10);
+			@include r(1200) {
+				font-size: rem(48);
+			}
+		}
+		&-discript {
+			font-size: rem(24);
+			text-transform: uppercase;
+			font-weight: 500;
+			@include r(1200) {
+				font-size: rem(18);
+			}
+		}
+	}
 }
