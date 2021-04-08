@@ -177,6 +177,7 @@ body.compensate-for-scrollbar {
     position: relative;
     text-align: left;
     vertical-align: middle;
+    width: 100%;
 }
 
 .fancybox-slide--image .fancybox-content {
@@ -402,11 +403,13 @@ body.compensate-for-scrollbar {
     cursor: pointer;
     opacity: .8;
     padding: 8px;
-    // position: absolute;
-    right: 6px;
-    top: 6px;
+    position: absolute;
+    // right: 34px;
+    // top: 6px;
+    right: 0;
+    top: 0;
     z-index: 401;
-    position: fixed;
+    // position: fixed;
     color: currentColor;
     background-color: $light;
     box-shadow: -5px -5px 10px rgba(22, 40, 104, 0.1);
@@ -637,10 +640,6 @@ body.compensate-for-scrollbar {
 
     .fancybox-slide--image {
         padding: 6px 0;
-    }
-
-    .fancybox-close-small {
-        right: -6px;
     }
 
     .fancybox-slide--image .fancybox-close-small {
