@@ -1200,7 +1200,6 @@ html {
   align-items: center;
   border-top: 0.0625rem solid #7E8CA0;
   justify-content: space-between;
-  transition: inherit;
 }
 
 .item-service__footer-icon {
