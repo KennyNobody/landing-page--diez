@@ -69,12 +69,40 @@
 				width: 100%;
 			}
 		}
+		&--10 {
+			width: calc(100% / 12 * 10 - 10px);
+			@include r(1200) {
+				width: 100%;
+			}
+		}
 		&--12 {
 			width: 100%;
+		}
+		&--centered {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
 		}
 		&--mob-order-1 {
 			@include r(1200) {
 				order: -1;
+			}
+		}
+		&--mob-1 {
+
+		}
+		&--mob-2 {
+			margin-top: rem(60);
+			@include r(1200) {
+				margin-top: 0;
+			}	
+		}
+		&--mob-3 {
+			img {
+				margin-top: rem(-240);
+				@include r(1200) {
+					margin-top: 0;
+				}
 			}
 		}
 	}

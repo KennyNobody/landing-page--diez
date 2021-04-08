@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>DiezTECH</title>
+    @@include("../blocks/modules/head/head.html")
+</head>
+<body class="body">
+    <div class="page">
+        <section class="section section--grey section--top">
+            <div class="container container--large">
+                @@include("../blocks/modules/header/header.html")
+                @@include("../blocks/modules/menu/menu.html")
+            </div>
+        </section>
+        <main class="main">
+            <section class="section--case">
+                @@include("../blocks/modules/case/case.html")
+            </section>
+        </main>
+        <footer class="footer">
+            <section class="section section--dark mob-hidden">
+                <div class="container">
+                    @@include("../blocks/modules/footer/footer.html")
+                </div>
+            </section>
+            <section class="section section--bottom section--dark-light">
+                <div class="container">
+                    @@include("../blocks/modules/developers/developers.html")
+                </div>
+            </section>
+        </footer>
+    </div>
+    <script src="js/main.js"></script>
+    <!-- <script src="js/vendor.js"></script> -->
+</body>
+</html>
