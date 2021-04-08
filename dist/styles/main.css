@@ -403,7 +403,7 @@ body.compensate-for-scrollbar {
   cursor: pointer;
   opacity: .8;
   padding: 8px;
-  right: 22px;
+  right: 6px;
   top: 6px;
   z-index: 401;
   position: fixed;
