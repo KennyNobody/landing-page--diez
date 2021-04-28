@@ -315,6 +315,9 @@ document.addEventListener('wpcf7mailsent', function (event) {
 
   if (form) {
     form.classList.add('form--sending');
+    setTimeout(function () {
+      form.classList.remove('form--sending');
+    }, 5000);
   }
 }, false);
 
